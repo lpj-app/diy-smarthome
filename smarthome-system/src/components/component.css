@@ -1,0 +1,32 @@
+.info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.info .info-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #f9f9f9;
+    color: #000;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 55%;
+    margin-left: -100px;
+    border: 2px solid black;
+    font-size: small;
+
+}
+.info .info-head {
+    font-weight: bold;
+}
+
+.info:hover .info-text {
+    visibility: visible;
+}
+
+
