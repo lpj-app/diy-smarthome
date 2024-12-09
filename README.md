@@ -29,6 +29,14 @@ The sensors can be implemented with an Arduino, ESP-32 or similar IoT devices. T
    - [Downloading and installing dependencies](#downloading-and-installing-dependencies)
    - [Start the smarthome system](#start-the-smarthome-system)
 4. [Get to know functions](#get-to-know-functions)
+   - [Add or delete sensor](#add-or-delete-sensor)
+   - [Change sensor IP](#change-sensor-ip)
+   - [Check dynamic status of database, API and sensors](#check-dynamic-status-of-database-api-and-sensors)
+   - [Manually request current values from the sensors](#manually-request-current-values-from-the-sensors)
+   - [Change update interval and host IP](#change-update-interval-and-host-ip)
+5. [Adding the first sensor](#add-sensors-to-the-system)
+   - [Currently integrated sensors](#currently-integrated-sensors)
+   - [DHT22 - Temperature and Humidity](#dht22---temperature-and-humidity)
 
 
 ## Install OS
@@ -402,3 +410,16 @@ If the firewall is activated, the port for the API should be added as an excepti
 ---
 
 ## Get to know functions
+
+### Add or delete sensor
+### Change sensor IP
+### Check dynamic status of database, API and sensors
+### Manually request current values from the sensors
+### Change update interval and host IP
+
+## Add sensors to the system
+
+### Currently integrated sensors
+### DHT22 - Temperature and Humidity
+
+
