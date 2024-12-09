@@ -28,6 +28,7 @@ The sensors can be implemented with an Arduino, ESP-32 or similar IoT devices. T
    - [Set up a database user for the API and the sensors](#set-up-a-database-user-for-the-api-and-the-sensors)
    - [Downloading and installing dependencies](#downloading-and-installing-dependencies)
    - [Start the smarthome system](#start-the-smarthome-system)
+4. [Get to know functions](#get-to-know-functions)
 
 
 ## Install OS
@@ -378,10 +379,11 @@ npm i
 
 ### Start the smarthome system
 Navigate to the root directory of the project <br/>
+<br/>
+
 **Start under Windows:** <br/>
 Execute: `startOnWin.bat`.
 <br/>
-
 **Starting under Linux:** <br/>
 Make the start script executable
 ```sh
@@ -396,3 +398,7 @@ if one of them is already running in another window <br/>
 API and WebApp should always run on the same server or device to minimize errors.<br/>
 Furthermore, the scripts can be started, restarted or stopped via custom systectl files or started directly by booting the system<br/>
 If the firewall is activated, the port for the API should be added as an exception (default port is 3010)<br/>
+
+---
+
+## Get to know functions
