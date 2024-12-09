@@ -2,11 +2,11 @@
 
 chcp 65001 >nul 
 
-echo Wähle eine Option:
-echo [1] API starten
-echo [2] WebApp starten
-echo [3] Beides starten
-set /p choice=Bitte wähle eine Option: 
+echo Select an option:
+echo [1] Start API
+echo [2] Start WebApp
+echo [3] Start both
+set /p choice=Please select an option: 
 
 if %choice%==1 (
     start cmd /k "cd shs-api && node nt-shs-api.js"

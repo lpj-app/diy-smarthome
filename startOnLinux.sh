@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Wähle eine Option:"
-echo "[1] API starten"
-echo "[2] WebApp starten"
-echo "[3] Beides starten"
-read -p "Bitte wähle eine Option: " choice
+echo "Select an option:"
+echo "[1] Start API"
+echo "[2] Start WebApp"
+echo "[3] Start both"
+read -p "Please choose an option: " choice
 
 case $choice in
     1)
