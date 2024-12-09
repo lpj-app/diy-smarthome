@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: grey;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: grey;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  height: 2em;
+}
+
+.svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.logo {
+  width: 5em;
+  height: 4.6em;
+}
