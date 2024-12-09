@@ -26,6 +26,8 @@ The sensors can be implemented with an Arduino, ESP-32 or similar IoT devices. T
 3. [First steps in the smarthome system](#first-steps-in-the-smarthome-system)
    - [Create the database and collections](#create-the-database-and-collections)
    - [Set up a database user for the API and the sensors](#set-up-a-database-user-for-the-api-and-the-sensors)
+   - [Downloading and installing dependencies](#downloading-and-installing-dependencies)
+   - [Start the smarthome system](#start-the-smarthome-system)
 
 
 ## Install OS
@@ -336,3 +338,61 @@ User: `api` <br/>
 Password: `nt-shs-api` <br/>
 If a custom user name has been created, this must also be changed in every query, <br/>
 e.g. in the connection string of the API database in the file `nt-shs-api.js`. <br/>
+
+
+### Downloading and installing dependencies
+
+**1. Download under Windows and Linux:**
+```sh
+git clone https://github.com/lpj-app/diy-smarthome.git
+```
+<br/>
+
+**2. Download dependencies**
+- Make sure that nodejs and npm are installed on the respective device <br/>
+
+For the API:
+- Navigate to the directory
+```sh
+cd diy-smarthome/shs-api/
+```
+&
+```sh
+npm i
+```
+<br/>
+
+For the smarthome system:
+- Navigate to the directory
+```sh
+cd diy-smarthome/smarthome-system/
+```
+&
+```sh
+npm i
+```
+<br/>
+
+**Update user and password in `diy-smarthome/shs-api/` in `keys.json` and `nt-shs-api.js` accordingly if they have been changed**
+<br/>
+
+### Start the smarthome system
+Navigate to the root directory of the project <br/>
+**Start under Windows:** <br/>
+Execute: `startOnWin.bat`.
+<br/>
+
+**Starting under Linux:** <br/>
+Make the start script executable
+```sh
+chmod +x startOnLinux.sh
+```
+Execute: `./startOnLinux.sh`
+<br/>
+
+When selecting, you can choose whether API and or WebApp should be started <br/>
+if one of them is already running in another window <br/>
+
+API and WebApp should always run on the same server or device to minimize errors.<br/>
+Furthermore, the scripts can be started, restarted or stopped via custom systectl files or started directly by booting the system<br/>
+If the firewall is activated, the port for the API should be added as an exception (default port is 3010)<br/>
