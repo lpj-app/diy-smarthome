@@ -51,14 +51,14 @@ const SensorButton = () => {
                         <h2 className="text-xl mb-4 text-blue-600">Add Sensor</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
-                                <label className="block text-gray-700">Sensor Name <span className="info">ℹ️
+                                <label className="block text-gray-700">Sensor name <span className="info">ℹ️
                                     <span className="info-text">
-                                        <p className={"info-head"}>Definition Sensor Name:</p>
+                                        <p className={"info-head"}>Definition sensor name:</p>
                                         <ul>
-                                            <li>Geben sie den Raum des Sensors an.</li>
-                                            <li>Halten Sie den Namen kurz und prägnant.</li>
-                                            <li>Vermeiden Sie Sonderzeichen.</li>
-                                            <li>Bspw. Bad, Wohnzimmer, ...</li>
+                                            <li>Specify the room of the sensor.</li>
+                                            <li>Keep the name short and concise.</li>
+                                            <li>Avoid special characters.</li>
+                                            <li>E.g. Bathroom, living room, ...</li>
                                         </ul>
                                     </span>
                                 </span></label>
@@ -67,17 +67,17 @@ const SensorButton = () => {
                                     className="w-full px-3 py-2 border rounded text-black"
                                     value={sensorName}
                                     onChange={(e) => setSensorName(e.target.value)}
-                                    placeholder={"Ort des Sensors"}
+                                    placeholder={"Location of the sensor"}
                                     required
                                 />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-gray-700">Sensor Type <span className="info">ℹ️
                                     <span className="info-text">
-                                        <p className={"info-head"}>Definition Sensor-Typ:</p>
+                                        <p className={"info-head"}>Sensor type definition:</p>
                                         <ul>
-                                            <li>Geben Sie die Art des Sensors an.</li>
-                                            <li>Beispiel: Temperatursensor, Feuchtigkeitssensor.</li>
+                                            <li>Specify the type of sensor.</li>
+                                            <li>E.g. temperature sensor, humidity sensor.</li>
                                         </ul>
                                     </span>
                                 </span></label>
@@ -86,18 +86,18 @@ const SensorButton = () => {
                                     className="w-full px-3 py-2 border rounded text-black"
                                     value={sensorType}
                                     onChange={(e) => setSensorType(e.target.value)}
-                                    placeholder={"Art (Temperatursensor, ...)"}
+                                    placeholder={"Type (temperature sensor, ...)"}
                                     required
                                 />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-gray-700">Sensor ID <span className="info">ℹ️
                                     <span className="info-text">
-                                        <p className={"info-head"}>Eindeutiges Kürzel definieren:</p>
+                                        <p className={"info-head"}>Define unique abbreviation:</p>
                                         <ul>
-                                            <li>Zusammensetzung aus:</li>
-                                            <li>Ort, Art, Anzahl</li>
-                                            <li>Bspw: Küche, Temperatur, 1</li>
+                                            <li>Composition of:</li>
+                                            <li>Room, type, number</li>
+                                            <li>E.g. kitchen, temperature, 1</li>
                                             <li>kt1</li>
                                         </ul>
                                     </span>
@@ -107,7 +107,7 @@ const SensorButton = () => {
                                     className="w-full px-3 py-2 border rounded text-black"
                                     value={sensorID}
                                     onChange={(e) => setSensorID(e.target.value)}
-                                    placeholder={"Eindeutiges Kürzel"}
+                                    placeholder={"Unique abbreviation"}
                                     required
                                 />
                             </div>

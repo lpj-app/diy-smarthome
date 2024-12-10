@@ -35,8 +35,8 @@ export function Footer() {
             <div className={"w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between"}>
                 <span className={"text-sm text-gray-500 dark:text-gray-400"}>
                     © 2024
-                    <Link href={"/"}>
-                        <span className={"hover:underline ml-1"}>Nerd Teens</span>
+                    <Link href={"https://github.com/lpj-app"}>
+                        <span className={"hover:underline ml-1"}>Luca-Pascal Junge</span>
                     </Link>
                     . All Rights Reserved.
                 </span>

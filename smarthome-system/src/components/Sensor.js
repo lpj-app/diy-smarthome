@@ -38,10 +38,10 @@ export default function Sensor({ sensorRoom, sensorType, latestValue, lastUpdate
             >
                 <div className='font-bold text-white mt-1'>{sensorData.sensorRoom}</div>
                 <div className='bg-cardItem cardItem rounded-xl'>
-                    <p>Typ: {sensorData.sensorType}</p>
+                    <p>Type: {sensorData.sensorType}</p>
                 </div>
                 <div className='bg-cardItem cardItem rounded-xl'>
-                    <p>Wert: {sensorData.latestValue}</p>
+                    <p>Value: {sensorData.latestValue}</p>
                 </div>
                 <div>
                     <p className='cardItem mb-3 rounded-xl bg-cardItem text-sm'>

@@ -163,7 +163,7 @@ const InfoStatus = () => {
                     <h2 style={{color: "black", fontWeight: 'bold', textAlign: 'center'}}>Status</h2>
                     <br />
                     <div className="form-group" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingRight: '20px' }}>
-                        <label style={{color: "black", fontWeight: 'bold'}}>Datenbank</label>
+                        <label style={{color: "black", fontWeight: 'bold'}}>Database</label>
                         <span className="status-circle" style={{
                             background: dbStatus,
                             borderRadius: '50%',
@@ -187,7 +187,7 @@ const InfoStatus = () => {
                     <br /> {/* Add spacing here */}
                     {sensorFetchError ? (
                         <div className="form-group" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingRight: '20px' }}>
-                            <label style={{color: "black", fontWeight: 'bold'}}>Keine Sensoren</label>
+                            <label style={{color: "black", fontWeight: 'bold'}}>No sensors</label>
                         </div>
                     ) : (
                         sensors.map(sensor => (
