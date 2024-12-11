@@ -25,7 +25,7 @@ The sensors can be implemented with an Arduino, ESP-32 or similar IoT devices. T
      - [Sources and tips](#sources-and-tips)
 3. [First steps in the smarthome system](#first-steps-in-the-smarthome-system)
    - [Create the database and collections](#create-the-database-and-collections)
-   - [Set up a database user for the API and the sensors](#set-up-a-database-user-for-the-api-and-the-sensors)
+   - [Set up a database user for the API](#set-up-a-database-user-for-the-api)
    - [Downloading and installing dependencies](#downloading-and-installing-dependencies)
    - [Start the smarthome system](#start-the-smarthome-system)
 4. [Get to know functions](#get-to-know-functions)
@@ -316,7 +316,7 @@ db.createCollection("sensor")
 ```
 <br/>
 
-### Set up a database user for the API and the sensors
+### Set up a database user for the API
 The API requires admin access to the nt-shs database in order to create, query <br/>
 or delete data records or sensors. <br/>
 
