@@ -1,6 +1,5 @@
 process.env.MONGODB_SUPPRESS_SYSTEM_LOG = 'true';
 
-const fs = require('fs');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -16,13 +15,12 @@ app.use(express.json());
 const port = 3010;
 
 const connectWithRetry = () => {
-    const { apiUser, apiKey, dbIP } = JSON.parse(fs.readFileSync('./keys.json', 'utf8'));
 
     mongoose.connect(`mongodb://${apiUser}:${apiKey}@${dbIP}:27017/nt-shs?authMechanism=DEFAULT&authSource=admin`, {
     })
         .then(() => {
+            //console.log(`Server running on port ${port}\n`);
             console.log('Connected to MongoDB');
-            console.log(`Server running on port ${port}\n`);
         })
         .catch((err) => {
             //console.error('Could not connect to MongoDB, maybe check server IP', err);
@@ -122,5 +120,5 @@ app.get('/api/getAPIStatus', async (req, res) => {
 
 //-------------------------Start Express-------------------------//
 app.listen(port, () => {
-    //console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${port}`);
 });
