@@ -1,5 +1,5 @@
 {
   "apiUser": "api",
   "apiKey": "nt-shs-api",
-  "dbIP": "localhost"
+  "dbIP": "127.0.0.1"
 }
